@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="food"></p>
+    
+    <script>
+        var food = ['rice', 'beans', 'yam', 'noodles', 'potatoes']
+        document.getElementById("food").innerHTML= food;
+        food.pop()
+        document.write(food+"<br>");
+        food.shift()
+        document.write(food+"<br>")
+        food.unshift("pizza")
+        document.write(food+"<br>")
+        /*food.length()*/
+        document.write(food.length+"<br>")
+        document.write(food.join("-")+"<br>")
+        food.push("burgar")
+        document.write(food)
+    </script>
+</body>
+</html>
